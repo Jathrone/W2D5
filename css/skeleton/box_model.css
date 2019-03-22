@@ -1,0 +1,51 @@
+div {
+}
+
+#first-div {
+  padding: 50px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  background-color: #39cccc;
+}
+
+#second-div {
+  height: 200px;
+  width: 200px;
+  padding: 50px;
+  border: 5px solid black;
+  box-sizing: border-box; 
+  background-color: #ff4136;
+}
+
+p {
+  background-color: #7fdbff;
+  
+}
+
+#third-div {
+  
+  padding: 50px;
+  border: 5px solid black;
+  min-height:150px
+  /* resize: both */
+}
+
+.image-1-container {
+  padding: 50px;
+  border: 5px solid black;
+  width: 200px;
+  height: 600px ;
+  background-color: teal;
+  
+}
+
+.image-2-container {
+  display: inline-block;
+  padding: 50px;
+  border: 5px solid black;
+  min-width: 200px;
+  height: 600px ;
+  background-color: teal;
+
+}
