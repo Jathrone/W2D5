@@ -24,12 +24,18 @@ class LRUCache
 
   def calc!(key)
     # suggested helper method; insert an (un-cached) key
+    node = Node.new(key, prc.call(key))
+    store.append(key, prc.call(key), node)
+    map[key] = node
   end
 
   def update_node!(node)
     # suggested helper method; move a node to the end of the list
+    store.remove(node.key).append(node.key, node.val, node)
   end
 
   def eject!
+    map.delete(store.first.key)
+    store.first.remove
   end
 end
